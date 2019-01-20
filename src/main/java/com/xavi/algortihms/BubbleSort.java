@@ -2,20 +2,25 @@ package com.xavi.algortihms;
 
 public class BubbleSort {
 
-    public void bubbleSortEx(int[] arr) {
-        int n = arr.length;
-        int temp = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 1; j < (n - i); j++) {
-                if (arr[j - 1] > arr[j]) {
-                    //swap elements
-                    temp = arr[j - 1];
-                    arr[j - 1] = arr[j];
-                    arr[j] = temp;
+    /**
+     * Complexity O(n^2)
+     * Space complexity O(1)
+     *
+     * @param array
+     */
+    public void bubbleSortEx(int[] array) {
+        int len = array.length;
+        int tmp = 0;
+        for (int i = 0; i < len; i++) {
+            for (int j = 1; j < (len - i); j++) {
+                if (array[j - 1] > array[j]) {
+                    tmp = array[j - 1];
+                    array[j - 1] = array[j];
+                    array[j] = tmp;
                 }
 
             }
         }
-
     }
+
 }
