@@ -9,6 +9,7 @@ target/
 
 #Ignore IntelliJ
 .idea/
+*.iml
 
 # BlueJ files
 *.ctxt

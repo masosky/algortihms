@@ -12,9 +12,7 @@ public class SingleRecursion {
         if (n < 2) {
             return 1;
         } else {
-            long tmp = n * factorial(n - 1);
-            System.out.println(tmp);
-            return tmp;
+            return n * factorial(n - 1);
         }
     }
 
